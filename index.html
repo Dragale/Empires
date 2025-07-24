@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Mini AOE</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Mini RTS Avancé</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Mini Age of Empire</h1>
-  <div id="resources">Bois : <span id="wood">0</span></div>
-  <button id="createSoldier">Créer Soldat (-20 bois)</button>
-  <canvas id="gameCanvas" width="600" height="400"></canvas>
-  <script src="game.js"></script>
+  <h1>Mini RTS Avancé</h1>
+  <div id="ui">
+    Bois: <span id="wood">0</span> |
+    Nourriture: <span id="food">0</span> |
+    Or: <span id="gold">0</span> |
+    Pop: <span id="pop">0</span>/<span id="popCap">5</span>
+  </div>
+  <div id="buttons">
+    <button id="buildHouse">Construire Maison (20 bois)</button>
+    <button id="buildBarracks">Construire Caserne (50 bois, 5 pop)</button>
+    <button id="trainSoldier">Créer Soldat (20 bois, 50 nour)</button>
+  </div>
+  <canvas id="game" width="800" height="480"></canvas>
+  <script src="js/engine.js"></script>
+  <script src="js/units.js"></script>
+  <script src="js/buildings.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

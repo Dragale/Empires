@@ -1,9 +1,17 @@
 body {
   font-family: sans-serif;
   text-align: center;
-  background: #f4f4f4;
+  background: #eef;
 }
-#gameCanvas {
+#ui, #buttons {
+  margin-bottom: 8px;
+}
+button {
+  margin: 0 4px;
+  padding: 6px 12px;
+}
+canvas {
   border: 1px solid #333;
-  background-color: #aaddaa;
+  cursor: pointer;
+  background: #cce;
 }
